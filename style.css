@@ -1,0 +1,13 @@
+body{
+    position: center;
+    align-items: center;
+    
+}
+.container{
+    position: center;
+    align-items: center;
+    border:1px solid;
+    border-radius: 20%;
+    height: 550px;
+    width: 1400px;
+}
