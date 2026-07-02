@@ -1,27 +1,36 @@
 <html>
-    <head>
-        <title>My Website</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <navbar>
-            <button>Dark Mode</button>
-        </navbar>
-        <section>
-            <div class="container">
-                <div class="input_area">
-                    <input type="text" placeholder="Enter your task here">
-                    <select>
-                        <option value="High">High</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Low">Low</option>
-                    </select>
-                    <buttion><i></i></buttion>
-                </div>
-                <div class="task_area">
-                    <ul id="task_list"></ul>
-                </div>
+
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>My Todo List</h1>
+            <div class="input_area">
+                <input type="text" placeholder="Enter your task here" id="task_input" required>
+                <select required>
+                    <option value="" disabled selected hidden>Priority</option>
+                    <option value="High">🔴 High</option>
+                    <option value="Medium">🟡 Medium</option>
+                    <option value="Low">🟢 Low</option>
+                </select>
+                <button class="task_button" id="add_button"><i class="fa-solid fa-plus"></i> Add Task</button>
             </div>
-        </section>           
-    </body>
+            <div class="task_area">
+                <ul id="task_list"></ul>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
 </html>
